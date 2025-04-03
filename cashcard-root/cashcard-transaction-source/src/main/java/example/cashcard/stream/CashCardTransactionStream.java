@@ -17,7 +17,7 @@ public class CashCardTransactionStream {
 	@Bean
 	public Supplier<Transaction> approvalRequest(DataSourceService dataSource){
 		return () -> { 
-			return dataSource.getData(); 
+			return dataSource.getData();
 			};
 	}
 
